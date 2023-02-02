@@ -8,4 +8,7 @@ class Contact {
     required this.age,
   });
   
+
+  @override
+  String toString() => 'Contact(name: $name, age: $age)';
 }
