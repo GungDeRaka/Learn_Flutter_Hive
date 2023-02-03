@@ -1,7 +1,14 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-// isi age and name
+import 'package:hive/hive.dart';
+part 'contact.g.dart';
+
+//? cara menggunakan type adapter
+//tambahkan
+@HiveType(typeId: 0)
 class Contact {
+  // ?kemudian tambahkan hivefield(index)
+  @HiveField(0)
   final String? name;
+  @HiveField(1)
   final int? age;
   Contact({
     required this.name,
